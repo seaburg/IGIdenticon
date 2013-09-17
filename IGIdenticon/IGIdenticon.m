@@ -195,7 +195,12 @@
 	CGContextAddPath(context, path);
 	
 	fillColor = isInvert ? backgroundColor : foregroundColor;
-	CGContextSetFillColorWithColor(context, fillColor.CGColor);
+
+	if ([fillColor isEqual:[UIColor clearColor]]) {
+		CGContextSetBlendMode(context, kCGBlendModeClear);
+	} else {
+		CGContextSetFillColorWithColor(context, fillColor.CGColor);
+	}
 	CGContextDrawPath(context, kCGPathFill);
 	
 	CGPathRelease(path);

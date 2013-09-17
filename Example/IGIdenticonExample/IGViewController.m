@@ -71,8 +71,8 @@
 						arc4random_uniform(256),
 						arc4random_uniform(256),
 						arc4random_uniform(256)];
-	
-	UIImage *identicon = [IGIdenticon identiconWithString:string size:64 backgroundColor:[UIColor whiteColor]];
+
+	UIImage *identicon = [IGIdenticon identiconWithString:string size:64 backgroundColor:[UIColor clearColor]];
 	
 	[self.strings insertObject:string atIndex:0];
 	[self.images insertObject:identicon atIndex:0];
