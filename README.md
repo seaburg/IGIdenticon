@@ -5,7 +5,7 @@ Installation
 ------------
 ### Using CocoaPods
 ```
-pod "IGIdenticon"
+pod 'IGIdenticon', '~> 0.1'
 ```
 ### Manually
 Copy `IGIdenticon.h` and `IGIdenticon.m` in your project.
