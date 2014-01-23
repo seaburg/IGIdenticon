@@ -3,6 +3,11 @@ IGIdenticon
 This library is a port of [identicon](https://github.com/donpark/identicon) library that generates identicon.  
 Installation
 ------------
+### Using CocoaPods
+```
+pod "IGIdenticon"
+```
+### Manually
 Copy `IGIdenticon.h` and `IGIdenticon.m` in your project.
 
 **Note:** You need to link the `CoreGraphics` framework.
