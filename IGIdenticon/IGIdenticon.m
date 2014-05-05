@@ -7,14 +7,8 @@
 //
 
 #import "IGIdenticon.h"
-
-@interface IGIdenticon ()
-
-+ (uint32_t)hashWithData:(NSData *)data;
-+ (NSArray *)cellTypes;
-+ (void)renderIdenticonCellOnContext:(CGContextRef)context position:(CGPoint)position size:(CGFloat)size cellType:(NSInteger)cellType turn:(NSInteger)turn isInvert:(BOOL)isInvert foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor;
-
-@end
+#import <CoreGraphics/CGBase.h>
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation IGIdenticon
 
@@ -49,8 +43,7 @@
 
 + (UIImage *)identiconWithUInt32:(uint32_t)number size:(CGFloat)size backgroundColor:(UIColor *)backgroundColor
 {
-	if (size <= 0)
-	{
+	if (size <= 0) {
 		return [UIImage new];
 	}
 	
@@ -107,7 +100,7 @@
 	return identicon;
 }
 
-#pragma mark - private metods
+#pragma mark - Private methods
 
 + (uint32_t)hashWithData:(NSData *)data
 {

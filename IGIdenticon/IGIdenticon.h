@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreGraphics/CGBase.h>
-#import <CommonCrypto/CommonDigest.h>
 
 @interface IGIdenticon : NSObject
 
