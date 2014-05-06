@@ -14,31 +14,31 @@
 
 + (UIImage *)identiconWithString:(NSString *)string size:(CGFloat)size
 {
-	return [IGIdenticon identiconWithString:string size:size backgroundColor:nil];
+	return [self identiconWithString:string size:size backgroundColor:nil];
 }
 
 + (UIImage *)identiconWithString:(NSString *)string size:(CGFloat)size backgroundColor:(UIColor *)backgroundColor
 {
 	NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
 	
-	return [IGIdenticon identiconWithData:data size:size backgroundColor:backgroundColor];
+	return [self identiconWithData:data size:size backgroundColor:backgroundColor];
 }
 
 + (UIImage *)identiconWithData:(NSData *)data size:(CGFloat)size
 {
-	return [IGIdenticon identiconWithData:data size:size backgroundColor:nil];
+	return [self identiconWithData:data size:size backgroundColor:nil];
 }
 
 + (UIImage *)identiconWithData:(NSData *)data size:(CGFloat)size backgroundColor:(UIColor *)backgroundColor
 {
-	uint32_t hash32 = [IGIdenticon hashWithData:data];
+	uint32_t hash32 = [self hashWithData:data];
 	
-	return [IGIdenticon identiconWithUInt32:hash32 size:size backgroundColor:backgroundColor];
+	return [self identiconWithUInt32:hash32 size:size backgroundColor:backgroundColor];
 }
 
 + (UIImage *)identiconWithUInt32:(uint32_t)number size:(CGFloat)size
 {
-	return [IGIdenticon identiconWithUInt32:number size:size backgroundColor:nil];
+	return [self identiconWithUInt32:number size:size backgroundColor:nil];
 }
 
 + (UIImage *)identiconWithUInt32:(uint32_t)number size:(CGFloat)size backgroundColor:(UIColor *)backgroundColor
@@ -148,7 +148,7 @@
 
 + (void)renderIdenticonCellOnContext:(CGContextRef)context position:(CGPoint)position size:(CGFloat)size cellType:(NSInteger)cellType turn:(NSInteger)turn isInvert:(BOOL)isInvert foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor
 {
-	NSArray *cellTypes = [IGIdenticon cellTypes];
+	NSArray *cellTypes = [self cellTypes];
 	
 	cellType = cellType % cellTypes.count;
 	turn = turn % 4;
