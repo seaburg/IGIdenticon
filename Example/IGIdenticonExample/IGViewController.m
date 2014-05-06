@@ -7,7 +7,7 @@
 //
 
 #import "IGViewController.h"
-#import "IGIdenticon.h"
+#import "IGGitHubIdenticon.h"
 
 @interface IGViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -61,8 +61,12 @@
     return cell;
 }
 
-#pragma mark -
-#pragma mark Actions
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 64;
+}
+
+#pragma mark - Actions
 
 - (IBAction)insertNewRow:(id)sender
 {
@@ -72,7 +76,12 @@
 						arc4random_uniform(256),
 						arc4random_uniform(256)];
 
-	UIImage *identicon = [IGIdenticon identiconWithString:string size:64 backgroundColor:[UIColor clearColor]];
+	UIImage *identicon = nil;
+    if ([self.images count] % 2) {
+        identicon = [IGIdenticon identiconWithString:string size:64 backgroundColor:nil];
+    } else {
+        identicon = [IGGitHubIdenticon identiconWithString:string size:64 backgroundColor:nil];
+    }
 	
 	[self.strings insertObject:string atIndex:0];
 	[self.images insertObject:identicon atIndex:0];
