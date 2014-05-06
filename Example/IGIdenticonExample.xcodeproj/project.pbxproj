@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FD5E0AE1918AA3B0077D6D3 /* IGGitHubIdenticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5E0AD1918AA3B0077D6D3 /* IGGitHubIdenticon.m */; };
 		8FE666A817ABB04100EFE536 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE666A717ABB04100EFE536 /* UIKit.framework */; };
 		8FE666AA17ABB04100EFE536 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE666A917ABB04100EFE536 /* Foundation.framework */; };
 		8FE666AC17ABB04100EFE536 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE666AB17ABB04100EFE536 /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8FD5E0AC1918AA3B0077D6D3 /* IGGitHubIdenticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGGitHubIdenticon.h; path = ../IGIdenticon/IGGitHubIdenticon.h; sourceTree = "<group>"; };
+		8FD5E0AD1918AA3B0077D6D3 /* IGGitHubIdenticon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGGitHubIdenticon.m; path = ../IGIdenticon/IGGitHubIdenticon.m; sourceTree = "<group>"; };
 		8FE666A417ABB04100EFE536 /* IGIdenticonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGIdenticonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE666A717ABB04100EFE536 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8FE666A917ABB04100EFE536 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -116,6 +119,8 @@
 			children = (
 				8FE6670617ABC06700EFE536 /* IGIdenticon.h */,
 				8FE6670717ABC06700EFE536 /* IGIdenticon.m */,
+				8FD5E0AC1918AA3B0077D6D3 /* IGGitHubIdenticon.h */,
+				8FD5E0AD1918AA3B0077D6D3 /* IGGitHubIdenticon.m */,
 			);
 			name = IGIdenticon;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE666B417ABB04100EFE536 /* main.m in Sources */,
+				8FD5E0AE1918AA3B0077D6D3 /* IGGitHubIdenticon.m in Sources */,
 				8FE666B817ABB04100EFE536 /* IGAppDelegate.m in Sources */,
 				8FE666D017ABB0B000EFE536 /* IGViewController.m in Sources */,
 				8FE6670817ABC06700EFE536 /* IGIdenticon.m in Sources */,
