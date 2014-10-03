@@ -48,7 +48,7 @@
     }
 
     if (backgroundColor == nil) {
-        backgroundColor = [UIColor whiteColor];
+        backgroundColor = [UIColor clearColor];
     }
 
     NSInteger middleCellType = [[[IGIdenticon centerCellTypes] objectAtIndex:(number & 3)] integerValue];
