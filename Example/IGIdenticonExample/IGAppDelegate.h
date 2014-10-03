@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class IGViewController;
-
 @interface IGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) IGViewController *viewController;
 
 @end

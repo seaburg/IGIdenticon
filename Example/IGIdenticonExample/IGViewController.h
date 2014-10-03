@@ -10,6 +10,4 @@
 
 @interface IGViewController : UIViewController
 
-- (IBAction)insertNewRow:(id)sender;
-
 @end

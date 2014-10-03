@@ -20,6 +20,8 @@
 		8FE666D017ABB0B000EFE536 /* IGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE666CF17ABB0B000EFE536 /* IGViewController.m */; };
 		8FE666D617ABBA2700EFE536 /* IGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE666D517ABBA2700EFE536 /* IGViewController.xib */; };
 		8FE6670817ABC06700EFE536 /* IGIdenticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6670717ABC06700EFE536 /* IGIdenticon.m */; };
+		AAB1892C19DF1E6500A23440 /* IGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB1892A19DF1E6500A23440 /* IGCollectionViewCell.m */; };
+		AAB1892D19DF1E6500A23440 /* IGCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAB1892B19DF1E6500A23440 /* IGCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,9 @@
 		8FE666D517ABBA2700EFE536 /* IGViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IGViewController.xib; sourceTree = "<group>"; };
 		8FE6670617ABC06700EFE536 /* IGIdenticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGIdenticon.h; path = ../IGIdenticon/IGIdenticon.h; sourceTree = "<group>"; };
 		8FE6670717ABC06700EFE536 /* IGIdenticon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGIdenticon.m; path = ../IGIdenticon/IGIdenticon.m; sourceTree = "<group>"; };
+		AAB1892919DF1E6500A23440 /* IGCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGCollectionViewCell.h; sourceTree = "<group>"; };
+		AAB1892A19DF1E6500A23440 /* IGCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGCollectionViewCell.m; sourceTree = "<group>"; };
+		AAB1892B19DF1E6500A23440 /* IGCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IGCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,9 @@
 				8FE666CE17ABB0B000EFE536 /* IGViewController.h */,
 				8FE666CF17ABB0B000EFE536 /* IGViewController.m */,
 				8FE666D517ABBA2700EFE536 /* IGViewController.xib */,
+				AAB1892919DF1E6500A23440 /* IGCollectionViewCell.h */,
+				AAB1892A19DF1E6500A23440 /* IGCollectionViewCell.m */,
+				AAB1892B19DF1E6500A23440 /* IGCollectionViewCell.xib */,
 				8FE666AE17ABB04100EFE536 /* Supporting Files */,
 			);
 			path = IGIdenticonExample;
@@ -181,6 +189,7 @@
 				8FE666BA17ABB04100EFE536 /* Default.png in Resources */,
 				8FE666BC17ABB04100EFE536 /* Default@2x.png in Resources */,
 				8FE666BE17ABB04100EFE536 /* Default-568h@2x.png in Resources */,
+				AAB1892D19DF1E6500A23440 /* IGCollectionViewCell.xib in Resources */,
 				8FE666D617ABBA2700EFE536 /* IGViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +203,7 @@
 			files = (
 				8FE666B417ABB04100EFE536 /* main.m in Sources */,
 				8FD5E0AE1918AA3B0077D6D3 /* IGGitHubIdenticon.m in Sources */,
+				AAB1892C19DF1E6500A23440 /* IGCollectionViewCell.m in Sources */,
 				8FE666B817ABB04100EFE536 /* IGAppDelegate.m in Sources */,
 				8FE666D017ABB0B000EFE536 /* IGViewController.m in Sources */,
 				8FE6670817ABC06700EFE536 /* IGIdenticon.m in Sources */,
@@ -273,13 +283,16 @@
 		8FE666C817ABB04100EFE536 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IGIdenticonExample/IGIdenticonExample-Prefix.pch";
 				INFOPLIST_FILE = "IGIdenticonExample/IGIdenticonExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -287,12 +300,14 @@
 		8FE666C917ABB04100EFE536 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IGIdenticonExample/IGIdenticonExample-Prefix.pch";
 				INFOPLIST_FILE = "IGIdenticonExample/IGIdenticonExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

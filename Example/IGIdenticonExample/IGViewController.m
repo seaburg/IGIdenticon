@@ -8,12 +8,12 @@
 
 #import "IGViewController.h"
 #import "IGGitHubIdenticon.h"
+#import "IGCollectionViewCell.h"
 
-@interface IGViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface IGViewController () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) NSMutableArray *strings;
-@property (nonatomic, strong) NSMutableArray *images;
+@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+@property (nonatomic, copy) NSArray *icons;
 
 @end
 
@@ -23,71 +23,54 @@
 {
     [super viewDidLoad];
 
-	self.strings = [[NSMutableArray alloc] init];
-	self.images = [[NSMutableArray alloc] init];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                                           target:self
+                                                                                           action:@selector(insertItemButtonTapped:)];
+
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass([IGCollectionViewCell class]) bundle:nil];
+    [self.collectionView registerNib:nib forCellWithReuseIdentifier:NSStringFromClass([IGCollectionViewCell class])];
 }
 
-- (void)viewDidUnload
+- (UIStatusBarStyle)preferredStatusBarStyle
 {
-	[super viewDidUnload];
-	
-	self.strings = nil;
-	self.images = nil;
+    return UIStatusBarStyleLightContent;
 }
 
-#pragma mark - Table view data source
+#pragma mark - UICollectionViewDelegateFlowLayout
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 1;
+    CGFloat size = CGRectGetWidth(collectionView.frame) / 4.5;
+    return CGSizeMake(size, size);
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [self.strings count];
-}
+#pragma mark - UICollectionViewDataSource
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-	}
-	
-	cell.textLabel.text = [self.strings objectAtIndex:indexPath.row];
-	cell.imageView.image = [self.images objectAtIndex:indexPath.row];
-    
+    IGCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([IGCollectionViewCell class]) forIndexPath:indexPath];
+    cell.imageView.image = self.icons[indexPath.row];
+
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 64;
+    return [self.icons count];
 }
 
 #pragma mark - Actions
 
-- (IBAction)insertNewRow:(id)sender
+- (void)insertItemButtonTapped:(id)sender
 {
-	NSString *string = [NSString stringWithFormat:@"%i.%i.%i.%i",
-						arc4random_uniform(256),
-						arc4random_uniform(256),
-						arc4random_uniform(256),
-						arc4random_uniform(256)];
+    CGFloat iconSize = [self collectionView:self.collectionView layout:self.collectionView.collectionViewLayout sizeForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]].width;
+    UIImage *icon = ([self.icons count] % 2) ? [IGIdenticon identiconWithUInt32:arc4random() size:iconSize] : [IGGitHubIdenticon identiconWithUInt32:arc4random() size:iconSize];
 
-	UIImage *identicon = nil;
-    if ([self.images count] % 2) {
-        identicon = [IGIdenticon identiconWithString:string size:64 backgroundColor:nil];
-    } else {
-        identicon = [IGGitHubIdenticon identiconWithString:string size:64 backgroundColor:nil];
-    }
-	
-	[self.strings insertObject:string atIndex:0];
-	[self.images insertObject:identicon atIndex:0];
-	
-	NSIndexPath *insertRowIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-	[self.tableView insertRowsAtIndexPaths:@[insertRowIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    NSMutableArray *icons = [NSMutableArray arrayWithArray:self.icons];
+    [icons insertObject:icon atIndex:0];
+    self.icons = icons;
+
+    [self.collectionView insertItemsAtIndexPaths:@[ [NSIndexPath indexPathForRow:0 inSection:0] ]];
 }
 
 @end
