@@ -67,7 +67,7 @@
     NSInteger red = (number >> 27) & 31;
     UIColor *foregroundColor = [UIColor colorWithRed:(red * 8) / 255.0f green:(green * 8) / 255.0f blue:(blue * 8) / 255.0f alpha:1];
 
-    UIGraphicsBeginImageContextWithOptions(CGSizeMake(size, size), NO, [[UIScreen mainScreen] scale]);
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(size, size), NO, 0);
     CGContextRef imageContext = UIGraphicsGetCurrentContext();
 
     NSUInteger cellSize = (NSUInteger)(size + 0.5f) / 4;
