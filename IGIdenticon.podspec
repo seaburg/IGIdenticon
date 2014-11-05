@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary             =  "Objective-C identicon generator"
   s.description         =  "This library is a port of [identicon](https://github.com/donpark/identicon) library that generates identicon."
   s.homepage            =  "https://github.com/Seaburg/IGIdenticon"
-  s.screenshots         =  "https://raw.github.com/seaburg/IGIdenticon/master/Screenshot/screenshot.jpg"
+  s.screenshots         =  "https://raw.github.com/seaburg/IGIdenticon/master/Screenshot/screenshot.png"
   s.license             =  { :type => "MIT", :file => "LICENSE" }
   s.author              =  { "Evgeniy Yurtaev" => "evgeniyyurt@gmail.com" }
   s.platform            =  :ios, "4.0"
