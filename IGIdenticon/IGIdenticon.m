@@ -105,8 +105,8 @@
 + (uint32_t)hashWithData:(NSData *)data
 {
     const char *bytesArray = [data bytes];
-    unsigned char hashBuffer[CC_MD4_DIGEST_LENGTH];
-    CC_MD4(bytesArray, data.length, hashBuffer);
+    unsigned char hashBuffer[CC_SHA256_DIGEST_LENGTH];
+    CC_SHA256(bytesArray, data.length, hashBuffer);
 
     uint32_t hash32 = 0;
     hash32 |= (uint32_t)hashBuffer[0];
