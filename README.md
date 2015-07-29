@@ -7,10 +7,10 @@ Installation
 ------------
 ### Using CocoaPods
 ```
-pod 'IGIdenticon', '~> 0.2.0'
+pod 'IGIdenticon', '~> 0.3.0'
 ```
 ### Manually
-Copy `IGIdenticon.h` and `IGIdenticon.m` in your project.
+Copy all files from `IGIdenticon` folder in your project.
 
 **Note:** You need to link the `CoreGraphics` framework.
 
@@ -21,5 +21,5 @@ Usage
     
         ...
             
-    UIImage *identicon = [IGIdenticon identiconWithString:@"example" size:64 backgroundColor:[UIColor whiteColor]];
-    identicon = [IGIdenticon identiconWithUInt32:arc4random() size:120];
+    IGImageGenerator *imageGenerator = [[IGImageGenerator alloc] initWithImageProducer:[IGSimpleIdenticon new] hashFunction:IGJenkinsHashFromData];
+    UIImage *image = [imageGenerator imageFromUInt32:arc4random() size:iconSize]
