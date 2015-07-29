@@ -1,13 +1,13 @@
 //
 //  IGGitHubIdenticon.h
-//  IGIdenticonExample
+//  IGIdenticon
 //
 //  Created by Evgeniy Yurtaev on 06.05.14.
 //  Copyright (c) 2014 Evgeniy Yurtaev. All rights reserved.
 //
 
-#import "IGIdenticon.h"
+#import "IGImageProducing.h"
 
-@interface IGGitHubIdenticon : IGIdenticon
+@interface IGGitHubIdenticon : NSObject <IGImageProducing>
 
 @end
