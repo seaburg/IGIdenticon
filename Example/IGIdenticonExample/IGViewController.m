@@ -7,12 +7,15 @@
 //
 
 #import "IGViewController.h"
-#import "IGGitHubIdenticon.h"
+#import "IGIdenticon.h"
 #import "IGCollectionViewCell.h"
 
 @interface IGViewController () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+@property (nonatomic, strong) IGImageGenerator *simpleIdenticonsGenerator;
+@property (nonatomic, strong) IGImageGenerator *githubIdenticonsGenerator;
+
 @property (nonatomic, copy) NSArray *icons;
 
 @end
@@ -24,8 +27,11 @@
     [super viewDidLoad];
 
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                                                                                           target:self
-                                                                                           action:@selector(insertItemButtonTapped:)];
+        target:self
+        action:@selector(insertItemButtonTapped:)];
+
+    self.simpleIdenticonsGenerator = [[IGImageGenerator alloc] initWithImageProducer:[IGSimpleIdenticon new] hashFunction:IGJenkinsHashFromData];
+    self.githubIdenticonsGenerator = [[IGImageGenerator alloc] initWithImageProducer:[IGGitHubIdenticon new] hashFunction:IGJenkinsHashFromData];
 
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([IGCollectionViewCell class]) bundle:nil];
     [self.collectionView registerNib:nib forCellWithReuseIdentifier:NSStringFromClass([IGCollectionViewCell class])];
@@ -63,8 +69,13 @@
 
 - (void)insertItemButtonTapped:(id)sender
 {
-    CGFloat iconSize = [self collectionView:self.collectionView layout:self.collectionView.collectionViewLayout sizeForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]].width;
-    UIImage *icon = ([self.icons count] % 2) ? [IGIdenticon identiconWithUInt32:arc4random() size:iconSize] : [IGGitHubIdenticon identiconWithUInt32:arc4random() size:iconSize];
+    CGSize iconSize = [self collectionView:self.collectionView layout:self.collectionView.collectionViewLayout sizeForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    UIImage *icon;
+    if ([self.icons count] % 2) {
+        icon = [self.simpleIdenticonsGenerator imageFromUInt32:arc4random() size:iconSize];
+    } else {
+        icon = [self.githubIdenticonsGenerator imageFromUInt32:arc4random() size:iconSize];
+    }
 
     NSMutableArray *icons = [NSMutableArray arrayWithArray:self.icons];
     [icons insertObject:icon atIndex:0];

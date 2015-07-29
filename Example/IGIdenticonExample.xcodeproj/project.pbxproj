@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		479915F71B691857006D1BFB /* IGImageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 479915F61B691857006D1BFB /* IGImageGenerator.m */; };
+		47EDFE651B66783400D71F8D /* IGHashFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EDFE641B66783400D71F8D /* IGHashFunctions.m */; };
 		8FD5E0AE1918AA3B0077D6D3 /* IGGitHubIdenticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5E0AD1918AA3B0077D6D3 /* IGGitHubIdenticon.m */; };
 		8FE666A817ABB04100EFE536 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE666A717ABB04100EFE536 /* UIKit.framework */; };
 		8FE666AA17ABB04100EFE536 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE666A917ABB04100EFE536 /* Foundation.framework */; };
@@ -19,12 +21,18 @@
 		8FE666BE17ABB04100EFE536 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FE666BD17ABB04100EFE536 /* Default-568h@2x.png */; };
 		8FE666D017ABB0B000EFE536 /* IGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE666CF17ABB0B000EFE536 /* IGViewController.m */; };
 		8FE666D617ABBA2700EFE536 /* IGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE666D517ABBA2700EFE536 /* IGViewController.xib */; };
-		8FE6670817ABC06700EFE536 /* IGIdenticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6670717ABC06700EFE536 /* IGIdenticon.m */; };
+		8FE6670817ABC06700EFE536 /* IGSimpleIdenticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6670717ABC06700EFE536 /* IGSimpleIdenticon.m */; };
 		AAB1892C19DF1E6500A23440 /* IGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB1892A19DF1E6500A23440 /* IGCollectionViewCell.m */; };
 		AAB1892D19DF1E6500A23440 /* IGCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAB1892B19DF1E6500A23440 /* IGCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		479915F51B691857006D1BFB /* IGImageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGImageGenerator.h; path = ../IGIdenticon/IGImageGenerator.h; sourceTree = "<group>"; };
+		479915F61B691857006D1BFB /* IGImageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGImageGenerator.m; path = ../IGIdenticon/IGImageGenerator.m; sourceTree = "<group>"; };
+		479915F81B691BB8006D1BFB /* IGIdenticon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IGIdenticon.h; path = ../IGIdenticon/IGIdenticon.h; sourceTree = "<group>"; };
+		47EDFE5E1B66735800D71F8D /* IGImageProducing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGImageProducing.h; path = ../IGIdenticon/IGImageProducing.h; sourceTree = "<group>"; };
+		47EDFE631B66783400D71F8D /* IGHashFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGHashFunctions.h; path = ../IGIdenticon/IGHashFunctions.h; sourceTree = "<group>"; };
+		47EDFE641B66783400D71F8D /* IGHashFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGHashFunctions.m; path = ../IGIdenticon/IGHashFunctions.m; sourceTree = "<group>"; };
 		8FD5E0AC1918AA3B0077D6D3 /* IGGitHubIdenticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGGitHubIdenticon.h; path = ../IGIdenticon/IGGitHubIdenticon.h; sourceTree = "<group>"; };
 		8FD5E0AD1918AA3B0077D6D3 /* IGGitHubIdenticon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGGitHubIdenticon.m; path = ../IGIdenticon/IGGitHubIdenticon.m; sourceTree = "<group>"; };
 		8FE666A417ABB04100EFE536 /* IGIdenticonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGIdenticonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +51,8 @@
 		8FE666CE17ABB0B000EFE536 /* IGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGViewController.h; sourceTree = "<group>"; };
 		8FE666CF17ABB0B000EFE536 /* IGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGViewController.m; sourceTree = "<group>"; };
 		8FE666D517ABBA2700EFE536 /* IGViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IGViewController.xib; sourceTree = "<group>"; };
-		8FE6670617ABC06700EFE536 /* IGIdenticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGIdenticon.h; path = ../IGIdenticon/IGIdenticon.h; sourceTree = "<group>"; };
-		8FE6670717ABC06700EFE536 /* IGIdenticon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGIdenticon.m; path = ../IGIdenticon/IGIdenticon.m; sourceTree = "<group>"; };
+		8FE6670617ABC06700EFE536 /* IGSimpleIdenticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGSimpleIdenticon.h; path = ../IGIdenticon/IGSimpleIdenticon.h; sourceTree = "<group>"; };
+		8FE6670717ABC06700EFE536 /* IGSimpleIdenticon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGSimpleIdenticon.m; path = ../IGIdenticon/IGSimpleIdenticon.m; sourceTree = "<group>"; };
 		AAB1892919DF1E6500A23440 /* IGCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGCollectionViewCell.h; sourceTree = "<group>"; };
 		AAB1892A19DF1E6500A23440 /* IGCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGCollectionViewCell.m; sourceTree = "<group>"; };
 		AAB1892B19DF1E6500A23440 /* IGCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IGCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -125,10 +133,16 @@
 		8FE666CA17ABB04B00EFE536 /* IGIdenticon */ = {
 			isa = PBXGroup;
 			children = (
-				8FE6670617ABC06700EFE536 /* IGIdenticon.h */,
-				8FE6670717ABC06700EFE536 /* IGIdenticon.m */,
+				479915F81B691BB8006D1BFB /* IGIdenticon.h */,
+				47EDFE5E1B66735800D71F8D /* IGImageProducing.h */,
+				8FE6670617ABC06700EFE536 /* IGSimpleIdenticon.h */,
+				8FE6670717ABC06700EFE536 /* IGSimpleIdenticon.m */,
 				8FD5E0AC1918AA3B0077D6D3 /* IGGitHubIdenticon.h */,
 				8FD5E0AD1918AA3B0077D6D3 /* IGGitHubIdenticon.m */,
+				47EDFE631B66783400D71F8D /* IGHashFunctions.h */,
+				47EDFE641B66783400D71F8D /* IGHashFunctions.m */,
+				479915F51B691857006D1BFB /* IGImageGenerator.h */,
+				479915F61B691857006D1BFB /* IGImageGenerator.m */,
 			);
 			name = IGIdenticon;
 			sourceTree = "<group>";
@@ -205,8 +219,10 @@
 				8FD5E0AE1918AA3B0077D6D3 /* IGGitHubIdenticon.m in Sources */,
 				AAB1892C19DF1E6500A23440 /* IGCollectionViewCell.m in Sources */,
 				8FE666B817ABB04100EFE536 /* IGAppDelegate.m in Sources */,
+				47EDFE651B66783400D71F8D /* IGHashFunctions.m in Sources */,
+				479915F71B691857006D1BFB /* IGImageGenerator.m in Sources */,
 				8FE666D017ABB0B000EFE536 /* IGViewController.m in Sources */,
-				8FE6670817ABC06700EFE536 /* IGIdenticon.m in Sources */,
+				8FE6670817ABC06700EFE536 /* IGSimpleIdenticon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
