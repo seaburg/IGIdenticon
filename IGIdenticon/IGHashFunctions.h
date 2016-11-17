@@ -8,4 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 uint32_t IGJenkinsHashFromData(NSData *data);
+
+NS_ASSUME_NONNULL_END

@@ -10,6 +10,8 @@
 
 #import "IGImageProducing.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface IGImageGenerator : NSObject
 
 - (instancetype)initWithImageProducer:(id<IGImageProducing>)imageProducer hashFunction:(uint32_t(*)(NSData *))hashFunction NS_DESIGNATED_INITIALIZER;
@@ -21,3 +23,5 @@
 - (UIImage *)imageFromString:(NSString *)string size:(CGSize)size;
 
 @end
+
+NS_ASSUME_NONNULL_END
