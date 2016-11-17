@@ -7,7 +7,7 @@ Installation
 ------------
 ### Using CocoaPods
 ```
-pod 'IGIdenticon', '~> 0.3.0'
+pod 'IGIdenticon'
 ```
 ### Manually
 Copy all files from `IGIdenticon` folder in your project.
