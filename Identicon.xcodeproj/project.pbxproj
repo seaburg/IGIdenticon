@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F4EB5BE1DE2339A00D2FE84 /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4EB5BC1DE2339A00D2FE84 /* CGImageExtension.swift */; };
 		8F4EB5BF1DE2339A00D2FE84 /* Identicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4EB5BD1DE2339A00D2FE84 /* Identicon.swift */; };
+		8F5442701DE384360017F50E /* JenkinsHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F54426F1DE384360017F50E /* JenkinsHash.swift */; };
 		8FA0F4B71DE0B40700B6E5DD /* Identicon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA0F4B51DE0B40700B6E5DD /* Identicon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FA0F4C11DE0B47600B6E5DD /* GitHubIdenticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0F4BE1DE0B47600B6E5DD /* GitHubIdenticon.swift */; };
 		8FA0F4C21DE0B47600B6E5DD /* IconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0F4BF1DE0B47600B6E5DD /* IconGenerator.swift */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		8F4EB5BC1DE2339A00D2FE84 /* CGImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
 		8F4EB5BD1DE2339A00D2FE84 /* Identicon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identicon.swift; sourceTree = "<group>"; };
+		8F54426F1DE384360017F50E /* JenkinsHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JenkinsHash.swift; sourceTree = "<group>"; };
 		8FA0F4B21DE0B40600B6E5DD /* Identicon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Identicon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA0F4B51DE0B40700B6E5DD /* Identicon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Identicon.h; sourceTree = "<group>"; };
 		8FA0F4B61DE0B40700B6E5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				8FA0F4B51DE0B40700B6E5DD /* Identicon.h */,
 				8FA0F4B61DE0B40700B6E5DD /* Info.plist */,
 				8FA0F4C51DE0BEA900B6E5DD /* CGColorExtension.swift */,
+				8F54426F1DE384360017F50E /* JenkinsHash.swift */,
 			);
 			path = Identicon;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				8FA0F4C11DE0B47600B6E5DD /* GitHubIdenticon.swift in Sources */,
 				8F4EB5BF1DE2339A00D2FE84 /* Identicon.swift in Sources */,
+				8F5442701DE384360017F50E /* JenkinsHash.swift in Sources */,
 				8FA0F4C61DE0BEA900B6E5DD /* CGColorExtension.swift in Sources */,
 				8FA0F4C21DE0B47600B6E5DD /* IconGenerator.swift in Sources */,
 				8F4EB5BE1DE2339A00D2FE84 /* CGImageExtension.swift in Sources */,
