@@ -25,6 +25,20 @@ public extension IconGenerator {
 
         return UIImage(cgImage: cgImage, scale: scale, orientation: UIImageOrientation.up)
     }
+    func icon(from data: Data, size: CGSize, scale: CGFloat = UIScreen.main.scale) -> UIImage {
+        let hash = jenkinsHash(from: data)
+        let image = icon(from: hash, size: size, scale: scale)
+
+        return image
+    }
+    func icon(from string: String, size: CGSize, scale: CGFloat = UIScreen.main.scale) -> UIImage? {
+        guard let data = string.data(using: String.Encoding.utf8) else {
+            return nil
+        }
+        let image = icon(from: data, size: size, scale: scale)
+
+        return image
+    }
 }
 #endif
 
@@ -35,6 +49,20 @@ public extension IconGenerator {
         let cgImage: CGImage = icon(from: number, size: scaledSize)
 
         return NSImage(cgImage: cgImage, size: size)
+    }
+    func icon(from data: Data, size: CGSize, scale: CGFloat) -> NSImage {
+        let hash = jenkinsHash(from: data)
+        let image = icon(from: hash, size: size, scale: scale)
+
+        return image
+    }
+    func icon(from string: String, size: CGSize, scale: CGFloat) -> NSImage? {
+        guard let data = string.data(using: String.Encoding.utf8) else {
+            return nil
+        }
+        let image = icon(from: data, size: size, scale: scale)
+
+        return image
     }
 }
 #endif
