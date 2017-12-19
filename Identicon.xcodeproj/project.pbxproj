@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F48FF061FE983920050618D /* GitHubIdenticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0F4BE1DE0B47600B6E5DD /* GitHubIdenticon.swift */; };
+		8F48FF071FE983920050618D /* Identicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4EB5BD1DE2339A00D2FE84 /* Identicon.swift */; };
+		8F48FF081FE983920050618D /* JenkinsHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F54426F1DE384360017F50E /* JenkinsHash.swift */; };
+		8F48FF091FE983920050618D /* CGColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0F4C51DE0BEA900B6E5DD /* CGColorExtension.swift */; };
+		8F48FF0A1FE983920050618D /* IconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0F4BF1DE0B47600B6E5DD /* IconGenerator.swift */; };
+		8F48FF0B1FE983920050618D /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4EB5BC1DE2339A00D2FE84 /* CGImageExtension.swift */; };
+		8F48FF0E1FE983920050618D /* Identicon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA0F4B51DE0B40700B6E5DD /* Identicon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F48FF171FE9843F0050618D /* GitHubIdenticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0F4BE1DE0B47600B6E5DD /* GitHubIdenticon.swift */; };
+		8F48FF181FE9843F0050618D /* Identicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4EB5BD1DE2339A00D2FE84 /* Identicon.swift */; };
+		8F48FF191FE9843F0050618D /* JenkinsHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F54426F1DE384360017F50E /* JenkinsHash.swift */; };
+		8F48FF1A1FE9843F0050618D /* CGColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0F4C51DE0BEA900B6E5DD /* CGColorExtension.swift */; };
+		8F48FF1B1FE9843F0050618D /* IconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0F4BF1DE0B47600B6E5DD /* IconGenerator.swift */; };
+		8F48FF1C1FE9843F0050618D /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4EB5BC1DE2339A00D2FE84 /* CGImageExtension.swift */; };
+		8F48FF1F1FE9843F0050618D /* Identicon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA0F4B51DE0B40700B6E5DD /* Identicon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F48FF281FE984A00050618D /* GitHubIdenticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0F4BE1DE0B47600B6E5DD /* GitHubIdenticon.swift */; };
+		8F48FF291FE984A00050618D /* Identicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4EB5BD1DE2339A00D2FE84 /* Identicon.swift */; };
+		8F48FF2A1FE984A00050618D /* JenkinsHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F54426F1DE384360017F50E /* JenkinsHash.swift */; };
+		8F48FF2B1FE984A00050618D /* CGColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0F4C51DE0BEA900B6E5DD /* CGColorExtension.swift */; };
+		8F48FF2C1FE984A00050618D /* IconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0F4BF1DE0B47600B6E5DD /* IconGenerator.swift */; };
+		8F48FF2D1FE984A00050618D /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4EB5BC1DE2339A00D2FE84 /* CGImageExtension.swift */; };
+		8F48FF301FE984A00050618D /* Identicon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA0F4B51DE0B40700B6E5DD /* Identicon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F4EB5BE1DE2339A00D2FE84 /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4EB5BC1DE2339A00D2FE84 /* CGImageExtension.swift */; };
 		8F4EB5BF1DE2339A00D2FE84 /* Identicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4EB5BD1DE2339A00D2FE84 /* Identicon.swift */; };
 		8F5442701DE384360017F50E /* JenkinsHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F54426F1DE384360017F50E /* JenkinsHash.swift */; };
@@ -17,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F48FF131FE983920050618D /* Identicon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Identicon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F48FF241FE9843F0050618D /* Identicon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Identicon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F48FF351FE984A00050618D /* Identicon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Identicon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4EB5BC1DE2339A00D2FE84 /* CGImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
 		8F4EB5BD1DE2339A00D2FE84 /* Identicon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identicon.swift; sourceTree = "<group>"; };
 		8F54426F1DE384360017F50E /* JenkinsHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JenkinsHash.swift; sourceTree = "<group>"; };
@@ -29,6 +53,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8F48FF0C1FE983920050618D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48FF1D1FE9843F0050618D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48FF2E1FE984A00050618D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FA0F4AE1DE0B40600B6E5DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,6 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				8FA0F4B21DE0B40600B6E5DD /* Identicon.framework */,
+				8F48FF131FE983920050618D /* Identicon.framework */,
+				8F48FF241FE9843F0050618D /* Identicon.framework */,
+				8F48FF351FE984A00050618D /* Identicon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +121,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		8F48FF0D1FE983920050618D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F48FF0E1FE983920050618D /* Identicon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48FF1E1FE9843F0050618D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F48FF1F1FE9843F0050618D /* Identicon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48FF2F1FE984A00050618D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F48FF301FE984A00050618D /* Identicon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FA0F4AF1DE0B40600B6E5DD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,9 +156,63 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8FA0F4B11DE0B40600B6E5DD /* Identicon */ = {
+		8F48FF041FE983920050618D /* Identicon macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FA0F4BA1DE0B40700B6E5DD /* Build configuration list for PBXNativeTarget "Identicon" */;
+			buildConfigurationList = 8F48FF101FE983920050618D /* Build configuration list for PBXNativeTarget "Identicon macOS" */;
+			buildPhases = (
+				8F48FF051FE983920050618D /* Sources */,
+				8F48FF0C1FE983920050618D /* Frameworks */,
+				8F48FF0D1FE983920050618D /* Headers */,
+				8F48FF0F1FE983920050618D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Identicon macOS";
+			productName = Identicon;
+			productReference = 8F48FF131FE983920050618D /* Identicon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F48FF151FE9843F0050618D /* Identicon tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F48FF211FE9843F0050618D /* Build configuration list for PBXNativeTarget "Identicon tvOS" */;
+			buildPhases = (
+				8F48FF161FE9843F0050618D /* Sources */,
+				8F48FF1D1FE9843F0050618D /* Frameworks */,
+				8F48FF1E1FE9843F0050618D /* Headers */,
+				8F48FF201FE9843F0050618D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Identicon tvOS";
+			productName = Identicon;
+			productReference = 8F48FF241FE9843F0050618D /* Identicon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F48FF261FE984A00050618D /* Identicon watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F48FF321FE984A00050618D /* Build configuration list for PBXNativeTarget "Identicon watchOS" */;
+			buildPhases = (
+				8F48FF271FE984A00050618D /* Sources */,
+				8F48FF2E1FE984A00050618D /* Frameworks */,
+				8F48FF2F1FE984A00050618D /* Headers */,
+				8F48FF311FE984A00050618D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Identicon watchOS";
+			productName = Identicon;
+			productReference = 8F48FF351FE984A00050618D /* Identicon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8FA0F4B11DE0B40600B6E5DD /* Identicon iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA0F4BA1DE0B40700B6E5DD /* Build configuration list for PBXNativeTarget "Identicon iOS" */;
 			buildPhases = (
 				8FA0F4AD1DE0B40600B6E5DD /* Sources */,
 				8FA0F4AE1DE0B40600B6E5DD /* Frameworks */,
@@ -97,7 +223,7 @@
 			);
 			dependencies = (
 			);
-			name = Identicon;
+			name = "Identicon iOS";
 			productName = Identicon;
 			productReference = 8FA0F4B21DE0B40600B6E5DD /* Identicon.framework */;
 			productType = "com.apple.product-type.framework";
@@ -130,12 +256,36 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8FA0F4B11DE0B40600B6E5DD /* Identicon */,
+				8FA0F4B11DE0B40600B6E5DD /* Identicon iOS */,
+				8F48FF041FE983920050618D /* Identicon macOS */,
+				8F48FF151FE9843F0050618D /* Identicon tvOS */,
+				8F48FF261FE984A00050618D /* Identicon watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8F48FF0F1FE983920050618D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48FF201FE9843F0050618D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48FF311FE984A00050618D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FA0F4B01DE0B40600B6E5DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +296,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F48FF051FE983920050618D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F48FF061FE983920050618D /* GitHubIdenticon.swift in Sources */,
+				8F48FF071FE983920050618D /* Identicon.swift in Sources */,
+				8F48FF081FE983920050618D /* JenkinsHash.swift in Sources */,
+				8F48FF091FE983920050618D /* CGColorExtension.swift in Sources */,
+				8F48FF0A1FE983920050618D /* IconGenerator.swift in Sources */,
+				8F48FF0B1FE983920050618D /* CGImageExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48FF161FE9843F0050618D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F48FF171FE9843F0050618D /* GitHubIdenticon.swift in Sources */,
+				8F48FF181FE9843F0050618D /* Identicon.swift in Sources */,
+				8F48FF191FE9843F0050618D /* JenkinsHash.swift in Sources */,
+				8F48FF1A1FE9843F0050618D /* CGColorExtension.swift in Sources */,
+				8F48FF1B1FE9843F0050618D /* IconGenerator.swift in Sources */,
+				8F48FF1C1FE9843F0050618D /* CGImageExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48FF271FE984A00050618D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F48FF281FE984A00050618D /* GitHubIdenticon.swift in Sources */,
+				8F48FF291FE984A00050618D /* Identicon.swift in Sources */,
+				8F48FF2A1FE984A00050618D /* JenkinsHash.swift in Sources */,
+				8F48FF2B1FE984A00050618D /* CGColorExtension.swift in Sources */,
+				8F48FF2C1FE984A00050618D /* IconGenerator.swift in Sources */,
+				8F48FF2D1FE984A00050618D /* CGImageExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FA0F4AD1DE0B40600B6E5DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,6 +351,139 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		8F48FF111FE983920050618D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Identicon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ey.Identicon;
+				PRODUCT_NAME = Identicon;
+				SDKROOT = macosx10.13;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8F48FF121FE983920050618D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Identicon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ey.Identicon;
+				PRODUCT_NAME = Identicon;
+				SDKROOT = macosx10.13;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8F48FF221FE9843F0050618D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Identicon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ey.Identicon;
+				PRODUCT_NAME = Identicon;
+				SDKROOT = macosx10.13;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8F48FF231FE9843F0050618D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Identicon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ey.Identicon;
+				PRODUCT_NAME = Identicon;
+				SDKROOT = macosx10.13;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8F48FF331FE984A00050618D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Identicon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ey.Identicon;
+				PRODUCT_NAME = Identicon;
+				SDKROOT = macosx10.13;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8F48FF341FE984A00050618D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Identicon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ey.Identicon;
+				PRODUCT_NAME = Identicon;
+				SDKROOT = macosx10.13;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		8FA0F4B81DE0B40700B6E5DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -275,7 +597,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ey.Identicon;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Identicon;
 				SDKROOT = iphoneos10.0;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -297,7 +619,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ey.Identicon;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Identicon;
 				SDKROOT = iphoneos10.0;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -307,6 +629,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8F48FF101FE983920050618D /* Build configuration list for PBXNativeTarget "Identicon macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F48FF111FE983920050618D /* Debug */,
+				8F48FF121FE983920050618D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F48FF211FE9843F0050618D /* Build configuration list for PBXNativeTarget "Identicon tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F48FF221FE9843F0050618D /* Debug */,
+				8F48FF231FE9843F0050618D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F48FF321FE984A00050618D /* Build configuration list for PBXNativeTarget "Identicon watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F48FF331FE984A00050618D /* Debug */,
+				8F48FF341FE984A00050618D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8FA0F4AC1DE0B40600B6E5DD /* Build configuration list for PBXProject "Identicon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -316,7 +665,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FA0F4BA1DE0B40700B6E5DD /* Build configuration list for PBXNativeTarget "Identicon" */ = {
+		8FA0F4BA1DE0B40700B6E5DD /* Build configuration list for PBXNativeTarget "Identicon iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FA0F4BB1DE0B40700B6E5DD /* Debug */,

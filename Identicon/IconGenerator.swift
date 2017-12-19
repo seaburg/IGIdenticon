@@ -17,7 +17,7 @@ public protocol IconGenerator {
     func icon(from number: UInt32, size: CGSize) -> CGImage
 }
 
-#if os(iOS) || os(watchOS) || os(tvOS)
+#if os(iOS) || os(tvOS)
 public extension IconGenerator {
     func icon(from number: UInt32, size: CGSize, scale: CGFloat = UIScreen.main.scale) -> UIImage {
         let scaledSize = CGSize(width: size.width * scale, height: size.height * scale)
