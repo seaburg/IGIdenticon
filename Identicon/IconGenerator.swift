@@ -23,7 +23,7 @@ public extension IconGenerator {
         let scaledSize = CGSize(width: size.width * scale, height: size.height * scale)
         let cgImage: CGImage = icon(from: number, size: scaledSize)
 
-        return UIImage(cgImage: cgImage, scale: scale, orientation: UIImageOrientation.up)
+        return UIImage(cgImage: cgImage, scale: scale, orientation: UIImage.Orientation.up)
     }
     func icon(from data: Data, size: CGSize, scale: CGFloat = UIScreen.main.scale) -> UIImage {
         let hash = jenkinsHash(from: data)
