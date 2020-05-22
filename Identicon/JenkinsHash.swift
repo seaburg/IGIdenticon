@@ -9,7 +9,12 @@
 import Foundation
 
 func jenkinsHash(from data: Data) -> UInt32 {
-    return data.withUnsafeBytes { (bytes: UnsafePointer<UInt8>) -> UInt32 in
+    #if swift(>=5)
+      typealias PointerType = UnsafeRawBufferPointer
+    #else
+      typealias PointerType = UnsafePointer<UInt8>
+    #endif
+    return data.withUnsafeBytes { (bytes: PointerType) -> UInt32 in
         var hash: UInt32 = 0
         for i in 0..<data.count {
             hash = hash &+ UInt32(bytes[i])
