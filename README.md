@@ -17,5 +17,8 @@ pod 'IGIdenticon'
 ```
 Usage
 -----
-    imageView.image = Identicon().icon(from: "string", size: CGSize(width: 100, height: 100))
+
+```swift
+imageView.image = Identicon().icon(from: "string", size: CGSize(width: 100, height: 100))
+```
 -----
