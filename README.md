@@ -15,6 +15,14 @@ CocoaPods
 ```
 pod 'IGIdenticon'
 ```
+SwiftPM
+```swift
+  dependencies: [
+    .package(url: "https://github.com/seaburg/IGIdenticon.git",
+             from: "0.7.0")
+  ]
+```
+
 Usage
 -----
 
