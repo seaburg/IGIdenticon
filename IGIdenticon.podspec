@@ -12,4 +12,5 @@ Pod::Spec.new do |s|
   s.source_files        =  "Identicon/*.swift"
   s.framework           =  "CoreGraphics"
   s.requires_arc        =  true
+  s.swift_versions      =  ["5.0", "5.1", "5.2", "5.3"]
 end
