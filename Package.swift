@@ -6,7 +6,7 @@ let package = Package(
     name: "IGIdenticon",
     platforms: [
         .macOS(.v10_10),
-        .iOS(.v8),
+        .iOS(.v9),
         .watchOS(.v2),
         .tvOS(.v9)
     ],
